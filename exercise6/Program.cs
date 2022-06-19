@@ -5,8 +5,12 @@
 //-3 -> нет
 //7 -> нет
 Console.WriteLine("Введите число: ");
-int number = int.Parse (Console.Readline ());
+int number = int.Parse (Console.ReadLine());
 int result = 0;
 
 result = number % 2;
-Conso
+if (result >= 0)
+{
+    Console.WriteLine ("Число является четным");
+} else
+Console.WriteLine ("Число не является четным");
